@@ -13,7 +13,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        mSharedComponent = DaggerSharedComponent.builder().appModule(new AppModule(this)).sharedModule(new SharedModule("Hello")).build();
+        mSharedComponent = DaggerSharedComponent.builder().appModule(new AppModule(this)).sharedModule(new SharedModule("http://google.com")).build();
 
     }
 
